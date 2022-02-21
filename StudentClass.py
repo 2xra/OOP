@@ -1,4 +1,4 @@
-
+from datetime import date
 
 class Kid:
     def __init__(self, studentIg,Name,DOB,classification):
@@ -12,7 +12,7 @@ class Kid:
         return self.__Name
 
     def set_age(self):
-        age = 2022-int(self.__DOB[-4:])
+        age = date.today().year-int(self.__DOB[-4:])
         self.__age = age
     
     def when_do_i_reg(self):
