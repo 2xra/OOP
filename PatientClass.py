@@ -1,3 +1,4 @@
+
 class Patient:
     def __init__(self,ID,name,address,phone,vetstat):
         self.__ID = ID
